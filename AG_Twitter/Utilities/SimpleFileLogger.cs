@@ -16,17 +16,17 @@ namespace AG_Twitter.Utilities
                 using (var sw = new StreamWriter(string.Concat("LOG_", DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, ".txt"), true, ASCIIEncoding.ASCII))
                 {
                     sw.Write(name);
-                    sw.Write("/t");
+                    sw.Write("\t");
                     sw.Write(timeStamp.ToString());
-                    sw.Write("/t");
+                    sw.Write("\t");
                     sw.WriteLine(message);
                 }
                 if (showInConsole)
                 {
                     Console.Write(name);
-                    Console.Write("/t");
+                    Console.Write("\t");
                     Console.Write(timeStamp.ToString());
-                    Console.Write("/t");
+                    Console.Write("\t");
                     Console.WriteLine(message);
                 }
             }
